@@ -1,0 +1,55 @@
+p {
+  margin: 0;
+  padding: 5px;
+}
+
+.message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .responsible {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .toggleBtn {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    max-width: min-content;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 5px;
+
+    img {
+      width: 16px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+:global {
+  .p-card-content {
+    padding: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .message {
+    width: 315px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

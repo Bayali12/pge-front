@@ -1,0 +1,23 @@
+.table {
+  th,
+  td {
+    padding: 10px 20px;
+  }
+
+  .toggleBtn {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background: none;
+    max-width: min-content;
+    padding: 0;
+
+    img {
+      width: 16px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
