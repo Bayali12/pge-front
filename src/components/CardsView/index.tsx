@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC } from 'react';
 
 import { Incident } from '../../store/types';
 import { DataView } from 'primereact/dataview';
